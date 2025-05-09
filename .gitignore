@@ -1,0 +1,38 @@
+# Environment variables
+.env
+.myenv
+api_key.txt
+
+# Python virtual environment
+# (Add your venv folder name if it's different or you have one)
+venv/
+*/venv/
+.venv/
+*/.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE-specific files (optional, but good practice)
+.vscode/
+.idea/
+
+# Build artifacts (if any)
+dist/
+build/
+*.egg-info/
+
+# Generated report files (if you don't want to version them)
+# For example, if you only want to keep the JSON reports in git
+# but not the PDFs:
+*.pdf
+# If you also don't want to track the generated JSON reports:
+# egmat_pacer_report_*.json
+# egmat_candidate_registry.json
+
+# Operating system specific files
+.DS_Store
+Thumbs.db

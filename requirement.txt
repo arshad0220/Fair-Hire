@@ -1,0 +1,19 @@
+# e-GMAT Adaptive Practice Environment (P.A.C.E. Prototype)
+# requirements.txt
+
+# Core Libraries
+numpy
+matplotlib
+reportlab
+python-dotenv
+
+# Computer Vision & Facial Emotion Recognition
+opencv-python
+deepface
+tensorflow # DeepFace dependency; use tensorflow-cpu if you don't have a compatible GPU or prefer CPU
+
+# Generative AI
+google-generativeai
+
+# Image Handling (often a dependency for plotting/CV libraries)
+Pillow

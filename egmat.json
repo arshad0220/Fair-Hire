@@ -1,0 +1,242 @@
+[
+    {
+        "question_id": 1,
+        "question": "The committee has decided to postpone the meeting until next week, which will allow more time for preparation.",
+        "options": [
+            "A. has decided to postpone",
+            "B. have decided to postpone",
+            "C. has decided postponing",
+            "D. have decided postponing"
+        ],
+        "answer": "A",
+        "topic": "SC",
+        "subtopic": "Subject-Verb Agreement",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 2,
+        "question": "If x + y = 10 and x - y = 4, what is the value of x?",
+        "options": ["A. 3", "B. 7", "C. 5", "D. 6"],
+        "answer": "B",
+        "topic": "Algebra",
+        "subtopic": "Equations",
+        "difficulty": "Easy"
+    },
+    {
+        "question_id": 3,
+        "question": "A company’s new product launch was successful because it addressed a gap in the market. What assumption underlies this statement?",
+        "options": [
+            "A. The market gap was previously identified.",
+            "B. The product was priced competitively.",
+            "C. The company had sufficient marketing budget.",
+            "D. Competitors ignored the market gap."
+        ],
+        "answer": "A",
+        "topic": "CR",
+        "subtopic": "Assumption",
+        "difficulty": "Hard"
+    },
+    {
+        "question_id": 4,
+        "question": "The passage suggests that the primary reason for the decline in biodiversity is:",
+        "options": [
+            "A. Habitat destruction",
+            "B. Climate change",
+            "C. Invasive species",
+            "D. Overhunting"
+        ],
+        "answer": "A",
+        "topic": "RC",
+        "subtopic": "Main Idea",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 5,
+        "question": "In triangle ABC, angle A = 60° and angle B = 70°. What is the measure of angle C?",
+        "options": ["A. 50°", "B. 60°", "C. 70°", "D. 80°"],
+        "answer": "A",
+        "topic": "Geometry",
+        "subtopic": "Triangles",
+        "difficulty": "Easy"
+    },
+    {
+        "question_id": 6,
+        "question": "Unlike the previous model, the new software is user-friendly and efficient.",
+        "options": [
+            "A. is user-friendly and efficient",
+            "B. are user-friendly and efficient",
+            "C. is user friendly and efficient",
+            "D. are user friendly and efficient"
+        ],
+        "answer": "A",
+        "topic": "SC",
+        "subtopic": "Subject-Verb Agreement",
+        "difficulty": "Easy"
+    },
+    {
+        "question_id": 7,
+        "question": "If 2x + 3y = 12 and x - y = 1, what is the value of y?",
+        "options": ["A. 2", "B. 3", "C. 4", "D. 5"],
+        "answer": "A",
+        "topic": "Algebra",
+        "subtopic": "Equations",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 8,
+        "question": "The argument that the policy will reduce unemployment assumes that:",
+        "options": [
+            "A. Jobs will be created in new sectors.",
+            "B. Unemployment is primarily cyclical.",
+            "C. Workers are willing to retrain.",
+            "D. Economic growth will remain stable."
+        ],
+        "answer": "A",
+        "topic": "CR",
+        "subtopic": "Assumption",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 9,
+        "question": "The author’s tone in the passage can best be described as:",
+        "options": [
+            "A. Optimistic",
+            "B. Critical",
+            "C. Neutral",
+            "D. Sarcastic"
+        ],
+        "answer": "B",
+        "topic": "RC",
+        "subtopic": "Tone",
+        "difficulty": "Hard"
+    },
+    {
+        "question_id": 10,
+        "question": "The area of a circle is 16π. What is its radius?",
+        "options": ["A. 2", "B. 4", "C. 6", "D. 8"],
+        "answer": "B",
+        "topic": "Geometry",
+        "subtopic": "Circles",
+        "difficulty": "Easy"
+    },
+    {
+        "question_id": 11,
+        "question": "Having been built to withstand earthquakes, the structure remained intact.",
+        "options": [
+            "A. Having been built to withstand",
+            "B. Being built to withstand",
+            "C. Built to withstand",
+            "D. Having built to withstand"
+        ],
+        "answer": "C",
+        "topic": "SC",
+        "subtopic": "Modifiers",
+        "difficulty": "Hard"
+    },
+    {
+        "question_id": 12,
+        "question": "If a car travels 60 miles in 1.5 hours, what is its average speed in miles per hour?",
+        "options": ["A. 30", "B. 40", "C. 50", "D. 60"],
+        "answer": "B",
+        "topic": "Algebra",
+        "subtopic": "Rate",
+        "difficulty": "Easy"
+    },
+    {
+        "question_id": 13,
+        "question": "The plan to increase taxes will improve infrastructure, provided that:",
+        "options": [
+            "A. Funds are allocated efficiently.",
+            "B. Public support remains strong.",
+            "C. Inflation does not rise.",
+            "D. Businesses do not relocate."
+        ],
+        "answer": "A",
+        "topic": "CR",
+        "subtopic": "Strengthen",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 14,
+        "question": "The passage primarily discusses:",
+        "options": [
+            "A. Economic impacts of globalization",
+            "B. Cultural effects of globalization",
+            "C. Environmental consequences of globalization",
+            "D. Political challenges of globalization"
+        ],
+        "answer": "B",
+        "topic": "RC",
+        "subtopic": "Main Idea",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 15,
+        "question": "In a right triangle, the legs are 3 and 4. What is the length of the hypotenuse?",
+        "options": ["A. 5", "B. 6", "C. 7", "D. 8"],
+        "answer": "A",
+        "topic": "Geometry",
+        "subtopic": "Pythagorean Theorem",
+        "difficulty": "Easy"
+    },
+    {
+        "question_id": 16,
+        "question": "The scientist’s discovery, which was groundbreaking, earned international acclaim.",
+        "options": [
+            "A. which was groundbreaking",
+            "B. that was groundbreaking",
+            "C. being groundbreaking",
+            "D. groundbreaking"
+        ],
+        "answer": "A",
+        "topic": "SC",
+        "subtopic": "Relative Clauses",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 17,
+        "question": "If the perimeter of a rectangle is 34 and its length is 10, what is its width?",
+        "options": ["A. 5", "B. 6", "C. 7", "D. 8"],
+        "answer": "C",
+        "topic": "Algebra",
+        "subtopic": "Geometry",
+        "difficulty": "Medium"
+    },
+    {
+        "question_id": 18,
+        "question": "The conclusion that the drug is effective is weakened if:",
+        "options": [
+            "A. The sample size was small.",
+            "B. The drug was tested on animals.",
+            "C. The study duration was long.",
+            "D. The drug had no side effects."
+        ],
+        "answer": "A",
+        "topic": "CR",
+        "subtopic": "Weaken",
+        "difficulty": "Hard"
+    },
+    {
+        "question_id": 19,
+        "question": "The passage implies that technological advancements have:",
+        "options": [
+            "A. Increased productivity",
+            "B. Reduced job opportunities",
+            "C. Widened economic inequality",
+            "D. All of the above"
+        ],
+        "answer": "D",
+        "topic": "RC",
+        "subtopic": "Inference",
+        "difficulty": "Hard"
+    },
+    {
+        "question_id": 20,
+        "question": "A square has a side length of 5. What is its area?",
+        "options": ["A. 20", "B. 25", "C. 30", "D. 35"],
+        "answer": "B",
+        "topic": "Geometry",
+        "subtopic": "Area",
+        "difficulty": "Easy"
+    }
+]

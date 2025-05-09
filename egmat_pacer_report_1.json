@@ -1,0 +1,986 @@
+{
+    "learner_id": "1",
+    "name": "arshad",
+    "sessions": [
+        {
+            "session_id": 1,
+            "date": "2025-05-09 17:11:10",
+            "learner_id": "1",
+            "learner_name": "arshad",
+            "score": 7,
+            "total": 20,
+            "questions": [
+                {
+                    "question_id": 1,
+                    "question_text": "A square has a side length of 5. What is its area?",
+                    "options": [
+                        "A. 20",
+                        "B. 30",
+                        "C. 25",
+                        "D. 35"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "Geometry",
+                    "subtopic": "Area",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 25",
+                    "time_spent": 10.3,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 39.83000183105469,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C, 25, is correct because the area of a square is calculated by squaring the length of its side.  Since the side length is 5, the area is 5 * 5 = 25. The concept tested is the formula for the area of a square.\n\n2. **Incorrect Option Traps:**  Incorrect options likely represent common calculation errors or misunderstandings of the area formula. For example, option A (20) might result from incorrectly multiplying 5 by 4 (perimeter calculation), while options B and D could stem from addition or multiplication errors involving 5.\n\n3. **Actionable Insight/Micro-recommendation:**  Despite getting the correct answer, the high unclarity (39.83%) coupled with a relatively short time spent (10.3 seconds) suggests a potential lack of confidence or a rushed calculation. To improve **Practice** (P), focus on more complex area problems involving decimals or fractions to build stronger fluency and reduce the likelihood of making careless errors.  Increase **Accuracy** (A) by double-checking your work after solving each problem and explicitly writing down the formula before calculation."
+                },
+                {
+                    "question_id": 2,
+                    "question_text": "If the perimeter of a rectangle is 34 and its length is 10, what is its width?",
+                    "options": [
+                        "A. 5",
+                        "B. 6",
+                        "C. 7",
+                        "D. 8"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "Algebra",
+                    "subtopic": "Geometry",
+                    "difficulty": "Medium",
+                    "learner_response": "A. 5",
+                    "time_spent": 1.4,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 49.7400016784668,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The correct answer is C (7) because the perimeter of a rectangle is calculated as 2 * (length + width).  Given a perimeter of 34 and a length of 10, the equation becomes 34 = 2 * (10 + width). Solving for width yields a value of 7. This question tests the understanding of perimeter calculation for rectangles.\n\n2. **Incorrect Option Appeal:** Option A (5) might be appealing due to a simple miscalculation or a misunderstanding of the perimeter formula.  Students might incorrectly assume the perimeter is simply the sum of length and width, leading to 34 - 10 = 24, and then dividing by 2 to get 12, then subtracting 10 to get 2, etc. This is flawed, neglecting the doubling of both length and width in the perimeter formula.\n\n3. **Actionable Insight/Micro-Recommendation:**  Since the learner got the question incorrect with low effort and high unclarity, they likely lack mastery of the perimeter formula.  **P**ractice more perimeter problems focusing on manipulating the formula to solve for different variables (length, width, or perimeter given the other two).  **A**ctively check the units of measurement, as this can lead to errors in calculation.  **C**onsistently use a step-by-step approach to avoid making careless mistakes in applying the formula (show the work rather than trying a mental shortcut).  **E**nsure that you fully understand how to use this formula before moving onto more advanced geometry problems."
+                },
+                {
+                    "question_id": 3,
+                    "question_text": "The conclusion that the drug is effective is weakened if:",
+                    "options": [
+                        "A. The sample size was small.",
+                        "B. The study duration was long.",
+                        "C. The drug was tested on animals.",
+                        "D. The drug had no side effects."
+                    ],
+                    "correct_answer": "A",
+                    "topic": "CR",
+                    "subtopic": "Weaken",
+                    "difficulty": "Hard",
+                    "learner_response": "B. The study duration was long.",
+                    "time_spent": 3.3,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 28.530000686645508,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option A, \"The sample size was small,\" is correct because a small sample size weakens the generalizability of the study's conclusion.  The core concept tested is the strength of causal inferences in critical reasoning.  A small sample size increases the likelihood that the observed results are due to chance rather than the drug's effectiveness, thus weakening the conclusion.\n\n2. **Why Incorrect Options are Appealing:**\n    * **B (Study duration was long):**  A longer study duration might *strengthen* the conclusion by providing more evidence of the drug's sustained effectiveness.  It's appealing because it might seem intuitively counterintuitive \u2013 a longer study *should* be better.\n    * **C (Drug was tested on animals):**  While animal studies are not as reliable as human trials, this doesn't automatically invalidate the conclusion regarding the drug's effectiveness. The relevance depends on the similarities between animal and human responses to the drug.\n    * **D (Drug had no side effects):**  The absence of side effects is actually a *positive* aspect of the drug, strengthening, not weakening, the conclusion.\n\n3. **Actionable Insight & Micro-Recommendation:** The learner's incorrect answer, combined with low effort and high unclarity, suggests a lack of foundational understanding of sample size's impact on statistical significance in critical reasoning.  **P**ractice more questions focusing specifically on evaluating the strength of causal arguments and the limitations of small sample sizes in research.  **A**ctively analyze each answer choice, evaluating its impact on the conclusion's validity. **C**heck your work to catch careless errors, as a short response time without confidence suggests rushing. **E**valuate your understanding of the underlying statistical principles influencing the strength of a study's conclusion."
+                },
+                {
+                    "question_id": 4,
+                    "question_text": "Unlike the previous model, the new software is user-friendly and efficient.",
+                    "options": [
+                        "A. are user friendly and efficient",
+                        "B. is user friendly and efficient",
+                        "C. is user-friendly and efficient",
+                        "D. are user-friendly and efficient"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "SC",
+                    "subtopic": "Subject-Verb Agreement",
+                    "difficulty": "Easy",
+                    "learner_response": "C. is user-friendly and efficient",
+                    "time_spent": 1.8,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 45.02000045776367,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C is correct because the sentence's subject is \"software,\" which is singular.  The verb must agree in number with the subject. This tests subject-verb agreement in a simple sentence.\n\n2. **Trap Analysis:** Options A and D incorrectly use the plural verb \"are\" with the singular subject \"software.\" Option B is incorrect because it uses the hyphen inconsistently: \"user-friendly\" should be hyphenated as it acts as a single adjective modifying \"software.\"\n\n3. **Actionable Insight (P.A.C.E. Recommendation):**  Despite getting the answer right, the learner exhibited high unclarity (45.02) suggesting a potential lack of confidence in their understanding of subject-verb agreement and adjective hyphenation.  To improve, focus on *Practice* more subject-verb agreement exercises, paying *Attention* to the number of the subject and the consistent application of hyphenation rules for compound adjectives.  This increased *Confidence* will lead to faster and more accurate responses."
+                },
+                {
+                    "question_id": 5,
+                    "question_text": "The area of a circle is 16\u03c0. What is its radius?",
+                    "options": [
+                        "A. 6",
+                        "B. 4",
+                        "C. 8",
+                        "D. 2"
+                    ],
+                    "correct_answer": "B",
+                    "topic": "Geometry",
+                    "subtopic": "Circles",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 8",
+                    "time_spent": 3.0,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 33.900001525878906,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The area of a circle is given by the formula A = \u03c0r\u00b2, where 'r' is the radius.  Since the area is 16\u03c0, we have 16\u03c0 = \u03c0r\u00b2. Dividing both sides by \u03c0 gives 16 = r\u00b2, and taking the square root of both sides yields r = 4. Therefore, the radius is 4. The concept tested is the application of the formula for the area of a circle and basic algebraic manipulation.\n\n2. **Trap Analysis:** Option C (8) is appealing because it might represent a miscalculation involving the diameter (twice the radius) or a confusion between area and circumference.  The learner might have incorrectly doubled the radius or applied a different formula.\n\n3. **Actionable Insight:** The learner's extremely low effort score combined with an incorrect answer and moderate unclarity suggests a rushed approach and possibly a lack of fundamental understanding of the area formula.  To improve, **Practice** more problems involving the area of a circle, focusing on accurately applying the formula and solving for the radius.   **Analyze** each step of the solution process carefully to avoid careless mistakes.  **Create** a flashcard with the area formula and examples to aid memorization and quicker recall."
+                },
+                {
+                    "question_id": 6,
+                    "question_text": "If 2x + 3y = 12 and x - y = 1, what is the value of y?",
+                    "options": [
+                        "A. 5",
+                        "B. 4",
+                        "C. 3",
+                        "D. 2"
+                    ],
+                    "correct_answer": "D",
+                    "topic": "Algebra",
+                    "subtopic": "Equations",
+                    "difficulty": "Medium",
+                    "learner_response": "B. 4",
+                    "time_spent": 4.5,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 47.560001373291016,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The question tests the ability to solve a system of simultaneous linear equations.  Option D is correct because solving the system 2x + 3y = 12 and x - y = 1 (e.g., using substitution or elimination) yields x = 3 and y = 2.\n\n\n2. **Traps and Appeal of Incorrect Options:** Option B (4) might be appealing if a student makes a calculation error during the solving process, perhaps incorrectly substituting or adding/subtracting terms.  Other incorrect options might result from similar arithmetic mistakes or misunderstanding of the elimination/substitution method.\n\n\n3. **Actionable Insight and Micro-Recommendation (P.A.C.E.):** The low effort and high unclarity despite an incorrect answer suggest a lack of fluency and potential carelessness in solving simultaneous equations.  To improve **Practice**, focus on solving a wider variety of these problems, paying close attention to each step.  **Analyze** your errors to identify recurring calculation or conceptual mistakes. Then **Create** a checklist for solving simultaneous equations (e.g., check solutions by substitution) and use it to **Execute** future problems more meticulously."
+                },
+                {
+                    "question_id": 7,
+                    "question_text": "If a car travels 60 miles in 1.5 hours, what is its average speed in miles per hour?",
+                    "options": [
+                        "A. 40",
+                        "B. 50",
+                        "C. 30",
+                        "D. 60"
+                    ],
+                    "correct_answer": "A",
+                    "topic": "Algebra",
+                    "subtopic": "Rate",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 30",
+                    "time_spent": 1.8,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 45.380001068115234,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The core concept tested is calculating average speed. Average speed is calculated by dividing the total distance traveled by the total time taken.  In this case, the car traveled 60 miles in 1.5 hours.  Therefore, the average speed is 60 miles / 1.5 hours = 40 miles per hour (Option A).\n\n2. **Incorrect Option Explanation:** Option C (30 mph) is a common trap resulting from a calculation error, possibly by incorrectly dividing 60 by 2 instead of 1.5.  The other incorrect options may be distractors with no particular logical connection to the calculation.\n\n3. **Actionable Insight/Micro-Recommendation:**  Given the incorrect answer, extremely low effort and high unclarity, this learner needs to Practice (P) more basic rate, time, and distance problems focusing on the calculation formula.  They should also Analyze (A) their work carefully to avoid simple arithmetic mistakes.  Finally, they should strive for more focused engagement by slowing down to ensure accuracy."
+                },
+                {
+                    "question_id": 8,
+                    "question_text": "The argument that the policy will reduce unemployment assumes that:",
+                    "options": [
+                        "A. Unemployment is primarily cyclical.",
+                        "B. Workers are willing to retrain.",
+                        "C. Jobs will be created in new sectors.",
+                        "D. Economic growth will remain stable."
+                    ],
+                    "correct_answer": "C",
+                    "topic": "CR",
+                    "subtopic": "Assumption",
+                    "difficulty": "Medium",
+                    "learner_response": "A. Unemployment is primarily cyclical.",
+                    "time_spent": 1.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 45.040000915527344,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The core concept tested is identifying the underlying assumption in an argument. The argument claims the policy will *reduce* unemployment.  This implicitly assumes that the policy will create *new* jobs, thus option C (\"Jobs will be created in new sectors\") is correct.  The policy's effectiveness hinges on the creation of jobs, not simply addressing cyclical unemployment or relying on worker retraining or stable growth.\n\n2. **Trap Explanations:**\n    * **A (Unemployment is primarily cyclical):**  This is tempting because cyclical unemployment fluctuates with the business cycle. However, the argument doesn't specify *what type* of unemployment the policy addresses. It could target structural unemployment (mismatch of skills) or frictional unemployment (time between jobs) as well, making A unnecessary.\n    * **B (Workers are willing to retrain):**  Retraining is helpful, but the argument doesn't depend on it. The policy might create jobs that don't require retraining.\n    * **D (Economic growth will remain stable):** Stable growth is generally beneficial for employment, but the argument could still hold even with fluctuating growth, as long as new jobs are created in specific sectors targeted by the policy.\n\n3. **Actionable Insight/Micro-Recommendation:** The learner's extremely low effort and high unclarity despite a very short response time suggests a lack of thorough consideration of the options.  To improve **Practice**, focus on actively identifying and evaluating *all* answer options, even if an initial guess seems appealing.  To improve **Analyze**, focus on explaining *why* each option is right or wrong.  To improve **Critique**, rigorously question the sufficiency of each assumption in supporting the argument's conclusion."
+                },
+                {
+                    "question_id": 9,
+                    "question_text": "The passage primarily discusses:",
+                    "options": [
+                        "A. Environmental consequences of globalization",
+                        "B. Economic impacts of globalization",
+                        "C. Political challenges of globalization",
+                        "D. Cultural effects of globalization"
+                    ],
+                    "correct_answer": "D",
+                    "topic": "RC",
+                    "subtopic": "Main Idea",
+                    "difficulty": "Medium",
+                    "learner_response": "D. Cultural effects of globalization",
+                    "time_spent": 2.2,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 48.540000915527344,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Rationale:** Option D, \"Cultural effects of globalization,\" is correct because the passage's main focus is on how globalization impacts cultural practices, values, and identities across different societies.  This is a Reading Comprehension (RC) question testing main idea identification. The passage likely provides numerous examples illustrating the spread of cultural elements or the homogenization/fragmentation of cultures due to globalization.\n\n2. **Why other options are incorrect:**  Options A, B, and C are incorrect because while globalization certainly has environmental, economic, and political ramifications, the passage's primary focus, as evidenced by the majority of its content, is on the cultural dimension. These options represent potential supporting details but not the central theme. They might be appealing because globalization indeed impacts these areas, making them plausible but ultimately less central than the cultural impacts highlighted in the passage.\n\n3. **Actionable Insight (P.A.C.E. Adjustment):**  The learner's high unclarity score despite a correct and very quick answer suggests potential guesswork or superficial understanding. To improve, focus on **Practice** actively engaging with the passage and identifying supporting details for the main idea.  Strengthen **Analysis** by explicitly stating how each paragraph contributes to the central theme.  Even a correct answer with high unclarity indicates a need to improve **Confidence** in recognizing and articulating the main idea."
+                },
+                {
+                    "question_id": 10,
+                    "question_text": "In triangle ABC, angle A = 60\u00b0 and angle B = 70\u00b0. What is the measure of angle C?",
+                    "options": [
+                        "A. 70\u00b0",
+                        "B. 60\u00b0",
+                        "C. 50\u00b0",
+                        "D. 80\u00b0"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "Geometry",
+                    "subtopic": "Triangles",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 50\u00b0",
+                    "time_spent": 2.3,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 48.16999816894531,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The core concept tested is the angle sum property of a triangle.  In any triangle, the sum of its interior angles is always 180\u00b0. Since angles A and B are 60\u00b0 and 70\u00b0 respectively, angle C = 180\u00b0 - 60\u00b0 - 70\u00b0 = 50\u00b0.  Option C is correct.\n\n2. **Traps and Incorrect Options:** Incorrect options might appeal to students who misinterpret the angle sum property or make calculation errors.  For example, option A and B might be chosen if a student mistakenly assumes an isosceles triangle (two angles equal). Option D might result from a simple addition or subtraction error.\n\n3. **Actionable Insight/Micro-Recommendation:** Although the student answered correctly, the high unclarity (48.17) despite a short response time suggests a potential lack of fluency or confidence in applying the angle sum property.  **Practice (P)** more geometry problems involving angle calculations in triangles to build speed and accuracy.  Focus on **Accuracy (A)** by meticulously checking calculations after each step."
+                },
+                {
+                    "question_id": 11,
+                    "question_text": "Having been built to withstand earthquakes, the structure remained intact.",
+                    "options": [
+                        "A. Being built to withstand",
+                        "B. Having built to withstand",
+                        "C. Built to withstand",
+                        "D. Having been built to withstand"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "SC",
+                    "subtopic": "Modifiers",
+                    "difficulty": "Hard",
+                    "learner_response": "C. Built to withstand",
+                    "time_spent": 2.9,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 0.36000001430511475,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C, \"Built to withstand,\" is correct because it uses a participial phrase correctly modifying the subject \"structure.\"  The sentence uses a passive voice construction, indicating the structure's inherent quality of being built to withstand earthquakes. This tests understanding of participial phrases and passive voice in sentence construction.\n\n\n2. **Incorrect Option Traps:** Option A (\"Being built to withstand\") uses the present participle \"being built,\" implying an ongoing process, whereas the sentence describes a completed action. Option B (\"Having built to withstand\") is grammatically incorrect; it uses a past participle (\"built\") incorrectly after the present perfect participle \"having built\". Option D (\"Having been built to withstand\") is grammatically correct, but less concise and elegant than option C.  The extra \"having been\" adds unnecessary words. While grammatically correct, it's less preferred due to style.\n\n\n3. **Actionable Insight/Recommendation:** Although the learner answered correctly and quickly, the low behavioral confidence and moderate unclarity suggest a potential lack of strong grammatical intuition.  To improve **Practice**, focus on more complex sentences using participial phrases and passive voice.  For **Analysis**, carefully analyze why other options are incorrect, explicitly noting the grammatical flaws.  For **Control**, set a minimum time limit for each sentence correction question to encourage thorough consideration and reduce reliance on quick guesses."
+                },
+                {
+                    "question_id": 12,
+                    "question_text": "If x + y = 10 and x - y = 4, what is the value of x?",
+                    "options": [
+                        "A. 7",
+                        "B. 5",
+                        "C. 6",
+                        "D. 3"
+                    ],
+                    "correct_answer": "A",
+                    "topic": "Algebra",
+                    "subtopic": "Equations",
+                    "difficulty": "Easy",
+                    "learner_response": "B. 5",
+                    "time_spent": 2.5,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 4.800000190734863,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The question tests the concept of solving simultaneous linear equations.  Adding the two equations (x + y = 10) and (x - y = 4) eliminates 'y', resulting in 2x = 14. Solving for x gives x = 7 (Option A).\n\n2. **Why Incorrect Options are Appealing:** Option B (5) might be appealing because it's a seemingly simple average of 10 and 4.  However, this approach is incorrect; it doesn't account for the relationship between x and y in the given equations.  Incorrect options often present easily calculated but irrelevant numbers.\n\n3. **Actionable Insight & Micro-Recommendation:** The learner's extremely low effort and confidence alongside a high unclarity score on an incorrect answer strongly suggests a rushed approach or lack of understanding of the simultaneous equation solving process.  To improve, **Practice (P)** more simultaneous equation problems, focusing on systematically eliminating variables using addition/subtraction.  **Analyze (A)** each step carefully and **Check (C)** your work to ensure accuracy before selecting an answer.  **Execute (E)** more practice problems under timed conditions to simulate the test environment and improve speed and accuracy."
+                },
+                {
+                    "question_id": 13,
+                    "question_text": "In a right triangle, the legs are 3 and 4. What is the length of the hypotenuse?",
+                    "options": [
+                        "A. 7",
+                        "B. 5",
+                        "C. 8",
+                        "D. 6"
+                    ],
+                    "correct_answer": "B",
+                    "topic": "Geometry",
+                    "subtopic": "Pythagorean Theorem",
+                    "difficulty": "Easy",
+                    "learner_response": "D. 6",
+                    "time_spent": 6.2,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 7.389999866485596,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option B, 5, is correct because the question tests the Pythagorean theorem.  In a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides (legs).  Therefore, hypotenuse\u00b2 = 3\u00b2 + 4\u00b2 = 9 + 16 = 25, and the hypotenuse = \u221a25 = 5.\n\n2. **Incorrect Option Explanation:** Option D (6) might be appealing because it's a simple sum of the two legs (3+4=7).  However, this ignores the fundamental Pythagorean theorem which requires squaring the legs before adding them. Other incorrect options are simply incorrect sums or values unrelated to the theorem.\n\n3. **Actionable Insight & Micro-Recommendation:** The learner's low effort, low confidence, high unclarity, and incorrect answer on a question that should take only basic geometry knowledge point to a lack of fundamental understanding of the Pythagorean theorem.  **Practice:** Focus on practicing more Pythagorean theorem problems, varying the leg lengths and focusing on understanding the underlying concept, not just memorizing a formula.  **Accuracy:**  Carefully review the steps and calculations involved in applying the theorem to eliminate calculation errors."
+                },
+                {
+                    "question_id": 14,
+                    "question_text": "The scientist\u2019s discovery, which was groundbreaking, earned international acclaim.",
+                    "options": [
+                        "A. that was groundbreaking",
+                        "B. which was groundbreaking",
+                        "C. being groundbreaking",
+                        "D. groundbreaking"
+                    ],
+                    "correct_answer": "B",
+                    "topic": "SC",
+                    "subtopic": "Relative Clauses",
+                    "difficulty": "Medium",
+                    "learner_response": "C. being groundbreaking",
+                    "time_spent": 1.9,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 4.659999847412109,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option B is correct because it uses a participial phrase (\"which was groundbreaking\") to correctly modify the noun \"discovery.\"  This demonstrates understanding of correct participial phrase usage and subject-verb agreement within a complex sentence. The concept tested is sentence structure and modification.\n\n2. **Why Incorrect Options are Appealing/Flawed:** Option C (\"being groundbreaking\") creates a dangling modifier;  \"being groundbreaking\" doesn't clearly modify \"discovery.\" Option A (\"that was groundbreaking\") is grammatically correct but slightly less elegant than the participial phrase in B.  Option D (\"groundbreaking\") is a concise, grammatically correct adjective, but it lacks the clarity and nuance provided by the added information of the participial phrase in B, which describes the nature of the groundbreaking discovery.\n\n3. **Actionable Insight/Micro-recommendation:**  Given the incorrect answer, extremely low effort, near-zero confidence, and moderate unclarity, despite a short response time, the learner likely rushed and lacked sufficient practice with participial phrases.  **Practice:** Focus on identifying and correctly constructing participial phrases in complex sentences using practice questions.  **Action:**  Review grammar rules on participial phrases and their proper usage. **Confidence:** Aim for higher confidence before submitting answers; take additional time to analyze the sentence structure and eliminate incorrect options."
+                },
+                {
+                    "question_id": 15,
+                    "question_text": "The author\u2019s tone in the passage can best be described as:",
+                    "options": [
+                        "A. Sarcastic",
+                        "B. Neutral",
+                        "C. Critical",
+                        "D. Optimistic"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "RC",
+                    "subtopic": "Tone",
+                    "difficulty": "Hard",
+                    "learner_response": "D. Optimistic",
+                    "time_spent": 2.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 5.519999980926514,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C, \"Critical,\" is correct because the passage likely contains negative evaluations or judgments of a subject, idea, or person.  This is a Reading Comprehension (RC) question testing inference and tone identification.  The author's attitude is revealed indirectly through word choice, sentence structure, and the overall presentation of information.  To answer correctly, one needs to identify the author's implicit criticisms or negative assessment.\n\n2. **Why Incorrect Options are Appealing:** Option D, \"Optimistic,\" is a common trap because some passages might contain positive elements alongside the criticism. However, the overall tone might still be predominantly critical.  A superficial reading might focus on the positive aspects and overlook the prevalent negativity. Option A, \"Sarcastic,\" might be tempting if the passage uses irony, but sarcasm is a specific type of criticism, and if the passage's criticism isn't ironic, \"Critical\" is a more accurate and encompassing description.  Option B, \"Neutral,\" is incorrect if there is a clear negative or positive bias in the author's presentation.\n\n3. **Actionable Insight/Micro-Recommendation:** The extremely low effort (0.00) and confidence (0.00) scores, coupled with a quick response time (2.7 seconds) and an incorrect answer suggest a rushed and superficial reading.  To improve, **Practice (P)** actively engaging with the text to identify the author's tone through detailed note-taking and annotation.  **Analyze (A)** the word choice and sentence structure to discern subtle hints of the author's attitude and ensure that your comprehension extends beyond the surface level of the text.   **Create (C)** practice questions focusing on identifying authorial tone in various passages to build expertise."
+                },
+                {
+                    "question_id": 16,
+                    "question_text": "The plan to increase taxes will improve infrastructure, provided that:",
+                    "options": [
+                        "A. Public support remains strong.",
+                        "B. Inflation does not rise.",
+                        "C. Funds are allocated efficiently.",
+                        "D. Businesses do not relocate."
+                    ],
+                    "correct_answer": "C",
+                    "topic": "CR",
+                    "subtopic": "Strengthen",
+                    "difficulty": "Medium",
+                    "learner_response": "C. Funds are allocated efficiently.",
+                    "time_spent": 1.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 4.349999904632568,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The question tests the understanding of **necessary conditions**. The sentence establishes a conditional relationship:  Tax increase \u2192 improved infrastructure. Option C (\"Funds are allocated efficiently\") identifies a necessary condition for the plan to achieve its stated goal.  Without efficient allocation, the improved infrastructure is unlikely, breaking the conditional link.\n\n2. **Why Other Options are Incorrect:**\n    * **A (Public support):** While helpful, public support isn't strictly *necessary* for infrastructure improvement. The plan could proceed even with low public approval.\n    * **B (Inflation):** Inflation is a separate economic factor; its presence or absence doesn't directly determine whether the funds improve infrastructure.\n    * **D (Businesses relocating):** Businesses relocating is irrelevant to whether the tax increase *itself* improves infrastructure.  It might impact the overall economic effect, but not the direct impact of the tax increase on infrastructure.\n\n3. **Actionable Insight/Micro-Recommendation (P.A.C.E.):**  The learner answered correctly but exhibited high unclarity and zero behavioral confidence despite a very short response time. This suggests a possible lucky guess or superficial understanding of necessary conditions.  **Practice:** Focus on more complex conditional reasoning questions, specifically those requiring the identification of necessary versus sufficient conditions.  **Analyze:**  After each question, actively review why incorrect options are flawed, solidifying understanding beyond just selecting the correct answer."
+                },
+                {
+                    "question_id": 17,
+                    "question_text": "A company\u2019s new product launch was successful because it addressed a gap in the market. What assumption underlies this statement?",
+                    "options": [
+                        "A. The company had sufficient marketing budget.",
+                        "B. Competitors ignored the market gap.",
+                        "C. The market gap was previously identified.",
+                        "D. The product was priced competitively."
+                    ],
+                    "correct_answer": "C",
+                    "topic": "CR",
+                    "subtopic": "Assumption",
+                    "difficulty": "Hard",
+                    "learner_response": "A. The company had sufficient marketing budget.",
+                    "time_spent": 2.2,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 8.619999885559082,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C is correct because the statement \"A company\u2019s new product launch was successful because it addressed a gap in the market\" implicitly assumes that the gap existed *before* the product launch.  The success is directly attributed to filling this pre-existing gap. This tests the crucial Critical Reasoning skill of identifying underlying assumptions\u2014unstated premises necessary for the conclusion to be valid.\n\n2. **Why Incorrect Options are Appealing (and Flawed):**\n    * **A (Sufficient Marketing Budget):** While marketing is important for success, the statement's logic focuses solely on the product filling a market need.  A large budget doesn't guarantee success if the product doesn't address a real demand.\n    * **B (Competitors Ignored the Market Gap):**  The statement's success is linked to filling the gap, not whether competitors were aware of it or acted on it.  The gap's existence is the key.\n    * **D (Product Priced Competitively):** Price is a factor in success, but the statement's core reasoning rests on addressing the market gap, regardless of pricing strategy.\n\n\n3. **Actionable Insight/Micro-Recommendation (P.A.C.E.):**  The learner's extremely low effort and high unclarity despite an incorrect answer suggest a lack of focused engagement with the underlying logic.  **Practice:** Focus on actively identifying the stated conclusion and then systematically exploring what unstated assumptions are necessary to support it.  **Analyze:** After each attempt, meticulously analyze why the incorrect options are flawed and how they differ from the correct one.  **Create:** Develop a checklist or mental framework to guide the identification of assumptions in CR questions."
+                },
+                {
+                    "question_id": 18,
+                    "question_text": "The passage implies that technological advancements have:",
+                    "options": [
+                        "A. Reduced job opportunities",
+                        "B. Widened economic inequality",
+                        "C. All of the above",
+                        "D. Increased productivity"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "RC",
+                    "subtopic": "Inference",
+                    "difficulty": "Hard",
+                    "learner_response": "C. All of the above",
+                    "time_spent": 2.5,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 3.0399999618530273,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Core Reason for Correct Answer:** Option C is correct because the question tests inference in Reading Comprehension.  A strong passage would likely present evidence suggesting technological advancements boost productivity (D), but this increased productivity might not be evenly distributed, leading to reduced job opportunities (A) for some and widening economic inequality (B) between groups.  The passage implies all three as potential consequences.\n\n2. **Common Traps and Why Incorrect Options Might Be Appealing:** Options A and B might seem appealing individually if the learner only focused on specific parts of the passage.  However, a comprehensive understanding of the passage's implications necessitates recognizing the interconnectedness of technological advancement's impacts, encompassing both positive (increased productivity) and negative (job displacement and inequality) consequences.\n\n3. **Actionable Insight/Micro-recommendation:**  Despite getting the correct answer, the extremely low effort and moderate unclarity scores (while speed is not bad), suggest a lack of thorough engagement with the passage.  To improve *Reading Comprehension Inference* skills, the learner should **Practice** actively summarizing and identifying cause-and-effect relationships within passages, **Analyze** the reasoning behind both correct and incorrect answer options more deliberately, even when quickly grasping the answer, and **Conceptualize** the broad implications of presented information, going beyond the literal text."
+                },
+                {
+                    "question_id": 19,
+                    "question_text": "The passage suggests that the primary reason for the decline in biodiversity is:",
+                    "options": [
+                        "A. Habitat destruction",
+                        "B. Invasive species",
+                        "C. Overhunting",
+                        "D. Climate change"
+                    ],
+                    "correct_answer": "A",
+                    "topic": "RC",
+                    "subtopic": "Main Idea",
+                    "difficulty": "Medium",
+                    "learner_response": "B. Invasive species",
+                    "time_spent": 1.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 5.630000114440918,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option A, habitat destruction, is correct because the passage likely presents evidence showing habitat loss as the most significant factor contributing to the decline in biodiversity.  This tests the learner's ability to identify the main idea and draw an inference based on the passage's content, a core Reading Comprehension skill.  The passage probably provides more supporting details or examples related to habitat destruction than to other threats.\n\n2. **Why Incorrect Options are Appealing:**  B (Invasive species), C (Overhunting), and D (Climate change) are all valid contributors to biodiversity loss.  The passage might mention these factors, making them seem plausible. However, the core question asks for the *primary* reason, implying a hierarchical relationship between the factors.  The learner likely misinterpreted the emphasis or failed to identify the most heavily weighted factor in the passage.\n\n3. **Actionable Insight & Micro-Recommendation (P.A.C.E.):** The extremely low effort and low confidence coupled with the incorrect answer and short response time strongly suggest the learner rushed through the passage without careful analysis.  To improve **Practice**, focus on actively identifying the main points and supporting evidence in each passage, specifically noting the frequency and emphasis given to different reasons for biodiversity decline.  Increase **Accuracy** by actively eliminating incorrect choices and clearly identifying the supporting details for the selected answer.  Allocate more **Time** to ensure thoughtful analysis of passage content."
+                },
+                {
+                    "question_id": 20,
+                    "question_text": "The committee has decided to postpone the meeting until next week, which will allow more time for preparation.",
+                    "options": [
+                        "A. has decided postponing",
+                        "B. have decided to postpone",
+                        "C. have decided postponing",
+                        "D. has decided to postpone"
+                    ],
+                    "correct_answer": "D",
+                    "topic": "SC",
+                    "subtopic": "Subject-Verb Agreement",
+                    "difficulty": "Medium",
+                    "learner_response": "C. have decided postponing",
+                    "time_spent": 3.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 3.9600000381469727,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option D, \"has decided to postpone,\" is correct because it uses the correct subject-verb agreement (\"committee\" is singular, thus \"has\") and the correct verb form.  \"To postpone\" is the correct infinitive form to follow \"decided.\" This question tests subject-verb agreement and the correct usage of infinitives.\n\n2. **Trap Explanation:** Option C (\"have decided postponing\") is incorrect because it uses the plural verb \"have\" with the singular subject \"committee\" and incorrectly uses \"postponing\" as a gerund instead of the infinitive \"to postpone.\"  Option B (\"have decided to postpone\") makes the same subject-verb agreement error. Option A (\"has decided postponing\") incorrectly uses the gerund \"postponing\" where an infinitive is required. The incorrect options might seem appealing due to the common mistake of confusing subject-verb agreement or improperly using gerunds and infinitives.\n\n3. **Actionable Insight:**  Given the incorrect answer, very low effort, and moderate unclarity, the learner needs to **Practice** more subject-verb agreement exercises focusing on singular and collective nouns. They should also **Analyze** the difference between infinitives and gerunds with specific examples and **Create** flashcards to memorize the correct usage.  Finally, they should **Execute** practice questions with a focus on deliberate and mindful selection of answers to improve accuracy."
+                }
+            ]
+        },
+        {
+            "session_id": 2,
+            "date": "2025-05-09 17:11:19",
+            "learner_id": "1",
+            "learner_name": "arshad",
+            "score": 7,
+            "total": 20,
+            "questions": [
+                {
+                    "question_id": 1,
+                    "question_text": "A square has a side length of 5. What is its area?",
+                    "options": [
+                        "A. 20",
+                        "B. 30",
+                        "C. 25",
+                        "D. 35"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "Geometry",
+                    "subtopic": "Area",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 25",
+                    "time_spent": 10.3,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 39.83000183105469,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C, 25, is correct because the area of a square is calculated by squaring the length of its side.  Since the side length is 5, the area is 5 * 5 = 25. The concept tested is the formula for the area of a square.\n\n2. **Incorrect Option Traps:**  Incorrect options likely represent common calculation errors or misunderstandings of the area formula. For example, option A (20) might result from incorrectly multiplying 5 by 4 (perimeter calculation), while options B and D could stem from addition or multiplication errors involving 5.\n\n3. **Actionable Insight/Micro-recommendation:**  Despite getting the correct answer, the high unclarity (39.83%) coupled with a relatively short time spent (10.3 seconds) suggests a potential lack of confidence or a rushed calculation. To improve **Practice** (P), focus on more complex area problems involving decimals or fractions to build stronger fluency and reduce the likelihood of making careless errors.  Increase **Accuracy** (A) by double-checking your work after solving each problem and explicitly writing down the formula before calculation."
+                },
+                {
+                    "question_id": 2,
+                    "question_text": "If the perimeter of a rectangle is 34 and its length is 10, what is its width?",
+                    "options": [
+                        "A. 5",
+                        "B. 6",
+                        "C. 7",
+                        "D. 8"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "Algebra",
+                    "subtopic": "Geometry",
+                    "difficulty": "Medium",
+                    "learner_response": "A. 5",
+                    "time_spent": 1.4,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 49.7400016784668,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The correct answer is C (7) because the perimeter of a rectangle is calculated as 2 * (length + width).  Given a perimeter of 34 and a length of 10, the equation becomes 34 = 2 * (10 + width). Solving for width yields a value of 7. This question tests the understanding of perimeter calculation for rectangles.\n\n2. **Incorrect Option Appeal:** Option A (5) might be appealing due to a simple miscalculation or a misunderstanding of the perimeter formula.  Students might incorrectly assume the perimeter is simply the sum of length and width, leading to 34 - 10 = 24, and then dividing by 2 to get 12, then subtracting 10 to get 2, etc. This is flawed, neglecting the doubling of both length and width in the perimeter formula.\n\n3. **Actionable Insight/Micro-Recommendation:**  Since the learner got the question incorrect with low effort and high unclarity, they likely lack mastery of the perimeter formula.  **P**ractice more perimeter problems focusing on manipulating the formula to solve for different variables (length, width, or perimeter given the other two).  **A**ctively check the units of measurement, as this can lead to errors in calculation.  **C**onsistently use a step-by-step approach to avoid making careless mistakes in applying the formula (show the work rather than trying a mental shortcut).  **E**nsure that you fully understand how to use this formula before moving onto more advanced geometry problems."
+                },
+                {
+                    "question_id": 3,
+                    "question_text": "The conclusion that the drug is effective is weakened if:",
+                    "options": [
+                        "A. The sample size was small.",
+                        "B. The study duration was long.",
+                        "C. The drug was tested on animals.",
+                        "D. The drug had no side effects."
+                    ],
+                    "correct_answer": "A",
+                    "topic": "CR",
+                    "subtopic": "Weaken",
+                    "difficulty": "Hard",
+                    "learner_response": "B. The study duration was long.",
+                    "time_spent": 3.3,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 28.530000686645508,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option A, \"The sample size was small,\" is correct because a small sample size weakens the generalizability of the study's conclusion.  The core concept tested is the strength of causal inferences in critical reasoning.  A small sample size increases the likelihood that the observed results are due to chance rather than the drug's effectiveness, thus weakening the conclusion.\n\n2. **Why Incorrect Options are Appealing:**\n    * **B (Study duration was long):**  A longer study duration might *strengthen* the conclusion by providing more evidence of the drug's sustained effectiveness.  It's appealing because it might seem intuitively counterintuitive \u2013 a longer study *should* be better.\n    * **C (Drug was tested on animals):**  While animal studies are not as reliable as human trials, this doesn't automatically invalidate the conclusion regarding the drug's effectiveness. The relevance depends on the similarities between animal and human responses to the drug.\n    * **D (Drug had no side effects):**  The absence of side effects is actually a *positive* aspect of the drug, strengthening, not weakening, the conclusion.\n\n3. **Actionable Insight & Micro-Recommendation:** The learner's incorrect answer, combined with low effort and high unclarity, suggests a lack of foundational understanding of sample size's impact on statistical significance in critical reasoning.  **P**ractice more questions focusing specifically on evaluating the strength of causal arguments and the limitations of small sample sizes in research.  **A**ctively analyze each answer choice, evaluating its impact on the conclusion's validity. **C**heck your work to catch careless errors, as a short response time without confidence suggests rushing. **E**valuate your understanding of the underlying statistical principles influencing the strength of a study's conclusion."
+                },
+                {
+                    "question_id": 4,
+                    "question_text": "Unlike the previous model, the new software is user-friendly and efficient.",
+                    "options": [
+                        "A. are user friendly and efficient",
+                        "B. is user friendly and efficient",
+                        "C. is user-friendly and efficient",
+                        "D. are user-friendly and efficient"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "SC",
+                    "subtopic": "Subject-Verb Agreement",
+                    "difficulty": "Easy",
+                    "learner_response": "C. is user-friendly and efficient",
+                    "time_spent": 1.8,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 45.02000045776367,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C is correct because the sentence's subject is \"software,\" which is singular.  The verb must agree in number with the subject. This tests subject-verb agreement in a simple sentence.\n\n2. **Trap Analysis:** Options A and D incorrectly use the plural verb \"are\" with the singular subject \"software.\" Option B is incorrect because it uses the hyphen inconsistently: \"user-friendly\" should be hyphenated as it acts as a single adjective modifying \"software.\"\n\n3. **Actionable Insight (P.A.C.E. Recommendation):**  Despite getting the answer right, the learner exhibited high unclarity (45.02) suggesting a potential lack of confidence in their understanding of subject-verb agreement and adjective hyphenation.  To improve, focus on *Practice* more subject-verb agreement exercises, paying *Attention* to the number of the subject and the consistent application of hyphenation rules for compound adjectives.  This increased *Confidence* will lead to faster and more accurate responses."
+                },
+                {
+                    "question_id": 5,
+                    "question_text": "The area of a circle is 16\u03c0. What is its radius?",
+                    "options": [
+                        "A. 6",
+                        "B. 4",
+                        "C. 8",
+                        "D. 2"
+                    ],
+                    "correct_answer": "B",
+                    "topic": "Geometry",
+                    "subtopic": "Circles",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 8",
+                    "time_spent": 3.0,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 33.900001525878906,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The area of a circle is given by the formula A = \u03c0r\u00b2, where 'r' is the radius.  Since the area is 16\u03c0, we have 16\u03c0 = \u03c0r\u00b2. Dividing both sides by \u03c0 gives 16 = r\u00b2, and taking the square root of both sides yields r = 4. Therefore, the radius is 4. The concept tested is the application of the formula for the area of a circle and basic algebraic manipulation.\n\n2. **Trap Analysis:** Option C (8) is appealing because it might represent a miscalculation involving the diameter (twice the radius) or a confusion between area and circumference.  The learner might have incorrectly doubled the radius or applied a different formula.\n\n3. **Actionable Insight:** The learner's extremely low effort score combined with an incorrect answer and moderate unclarity suggests a rushed approach and possibly a lack of fundamental understanding of the area formula.  To improve, **Practice** more problems involving the area of a circle, focusing on accurately applying the formula and solving for the radius.   **Analyze** each step of the solution process carefully to avoid careless mistakes.  **Create** a flashcard with the area formula and examples to aid memorization and quicker recall."
+                },
+                {
+                    "question_id": 6,
+                    "question_text": "If 2x + 3y = 12 and x - y = 1, what is the value of y?",
+                    "options": [
+                        "A. 5",
+                        "B. 4",
+                        "C. 3",
+                        "D. 2"
+                    ],
+                    "correct_answer": "D",
+                    "topic": "Algebra",
+                    "subtopic": "Equations",
+                    "difficulty": "Medium",
+                    "learner_response": "B. 4",
+                    "time_spent": 4.5,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 47.560001373291016,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The question tests the ability to solve a system of simultaneous linear equations.  Option D is correct because solving the system 2x + 3y = 12 and x - y = 1 (e.g., using substitution or elimination) yields x = 3 and y = 2.\n\n\n2. **Traps and Appeal of Incorrect Options:** Option B (4) might be appealing if a student makes a calculation error during the solving process, perhaps incorrectly substituting or adding/subtracting terms.  Other incorrect options might result from similar arithmetic mistakes or misunderstanding of the elimination/substitution method.\n\n\n3. **Actionable Insight and Micro-Recommendation (P.A.C.E.):** The low effort and high unclarity despite an incorrect answer suggest a lack of fluency and potential carelessness in solving simultaneous equations.  To improve **Practice**, focus on solving a wider variety of these problems, paying close attention to each step.  **Analyze** your errors to identify recurring calculation or conceptual mistakes. Then **Create** a checklist for solving simultaneous equations (e.g., check solutions by substitution) and use it to **Execute** future problems more meticulously."
+                },
+                {
+                    "question_id": 7,
+                    "question_text": "If a car travels 60 miles in 1.5 hours, what is its average speed in miles per hour?",
+                    "options": [
+                        "A. 40",
+                        "B. 50",
+                        "C. 30",
+                        "D. 60"
+                    ],
+                    "correct_answer": "A",
+                    "topic": "Algebra",
+                    "subtopic": "Rate",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 30",
+                    "time_spent": 1.8,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 45.380001068115234,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The core concept tested is calculating average speed. Average speed is calculated by dividing the total distance traveled by the total time taken.  In this case, the car traveled 60 miles in 1.5 hours.  Therefore, the average speed is 60 miles / 1.5 hours = 40 miles per hour (Option A).\n\n2. **Incorrect Option Explanation:** Option C (30 mph) is a common trap resulting from a calculation error, possibly by incorrectly dividing 60 by 2 instead of 1.5.  The other incorrect options may be distractors with no particular logical connection to the calculation.\n\n3. **Actionable Insight/Micro-Recommendation:**  Given the incorrect answer, extremely low effort and high unclarity, this learner needs to Practice (P) more basic rate, time, and distance problems focusing on the calculation formula.  They should also Analyze (A) their work carefully to avoid simple arithmetic mistakes.  Finally, they should strive for more focused engagement by slowing down to ensure accuracy."
+                },
+                {
+                    "question_id": 8,
+                    "question_text": "The argument that the policy will reduce unemployment assumes that:",
+                    "options": [
+                        "A. Unemployment is primarily cyclical.",
+                        "B. Workers are willing to retrain.",
+                        "C. Jobs will be created in new sectors.",
+                        "D. Economic growth will remain stable."
+                    ],
+                    "correct_answer": "C",
+                    "topic": "CR",
+                    "subtopic": "Assumption",
+                    "difficulty": "Medium",
+                    "learner_response": "A. Unemployment is primarily cyclical.",
+                    "time_spent": 1.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 45.040000915527344,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The core concept tested is identifying the underlying assumption in an argument. The argument claims the policy will *reduce* unemployment.  This implicitly assumes that the policy will create *new* jobs, thus option C (\"Jobs will be created in new sectors\") is correct.  The policy's effectiveness hinges on the creation of jobs, not simply addressing cyclical unemployment or relying on worker retraining or stable growth.\n\n2. **Trap Explanations:**\n    * **A (Unemployment is primarily cyclical):**  This is tempting because cyclical unemployment fluctuates with the business cycle. However, the argument doesn't specify *what type* of unemployment the policy addresses. It could target structural unemployment (mismatch of skills) or frictional unemployment (time between jobs) as well, making A unnecessary.\n    * **B (Workers are willing to retrain):**  Retraining is helpful, but the argument doesn't depend on it. The policy might create jobs that don't require retraining.\n    * **D (Economic growth will remain stable):** Stable growth is generally beneficial for employment, but the argument could still hold even with fluctuating growth, as long as new jobs are created in specific sectors targeted by the policy.\n\n3. **Actionable Insight/Micro-Recommendation:** The learner's extremely low effort and high unclarity despite a very short response time suggests a lack of thorough consideration of the options.  To improve **Practice**, focus on actively identifying and evaluating *all* answer options, even if an initial guess seems appealing.  To improve **Analyze**, focus on explaining *why* each option is right or wrong.  To improve **Critique**, rigorously question the sufficiency of each assumption in supporting the argument's conclusion."
+                },
+                {
+                    "question_id": 9,
+                    "question_text": "The passage primarily discusses:",
+                    "options": [
+                        "A. Environmental consequences of globalization",
+                        "B. Economic impacts of globalization",
+                        "C. Political challenges of globalization",
+                        "D. Cultural effects of globalization"
+                    ],
+                    "correct_answer": "D",
+                    "topic": "RC",
+                    "subtopic": "Main Idea",
+                    "difficulty": "Medium",
+                    "learner_response": "D. Cultural effects of globalization",
+                    "time_spent": 2.2,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 48.540000915527344,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Rationale:** Option D, \"Cultural effects of globalization,\" is correct because the passage's main focus is on how globalization impacts cultural practices, values, and identities across different societies.  This is a Reading Comprehension (RC) question testing main idea identification. The passage likely provides numerous examples illustrating the spread of cultural elements or the homogenization/fragmentation of cultures due to globalization.\n\n2. **Why other options are incorrect:**  Options A, B, and C are incorrect because while globalization certainly has environmental, economic, and political ramifications, the passage's primary focus, as evidenced by the majority of its content, is on the cultural dimension. These options represent potential supporting details but not the central theme. They might be appealing because globalization indeed impacts these areas, making them plausible but ultimately less central than the cultural impacts highlighted in the passage.\n\n3. **Actionable Insight (P.A.C.E. Adjustment):**  The learner's high unclarity score despite a correct and very quick answer suggests potential guesswork or superficial understanding. To improve, focus on **Practice** actively engaging with the passage and identifying supporting details for the main idea.  Strengthen **Analysis** by explicitly stating how each paragraph contributes to the central theme.  Even a correct answer with high unclarity indicates a need to improve **Confidence** in recognizing and articulating the main idea."
+                },
+                {
+                    "question_id": 10,
+                    "question_text": "In triangle ABC, angle A = 60\u00b0 and angle B = 70\u00b0. What is the measure of angle C?",
+                    "options": [
+                        "A. 70\u00b0",
+                        "B. 60\u00b0",
+                        "C. 50\u00b0",
+                        "D. 80\u00b0"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "Geometry",
+                    "subtopic": "Triangles",
+                    "difficulty": "Easy",
+                    "learner_response": "C. 50\u00b0",
+                    "time_spent": 2.3,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 48.16999816894531,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The core concept tested is the angle sum property of a triangle.  In any triangle, the sum of its interior angles is always 180\u00b0. Since angles A and B are 60\u00b0 and 70\u00b0 respectively, angle C = 180\u00b0 - 60\u00b0 - 70\u00b0 = 50\u00b0.  Option C is correct.\n\n2. **Traps and Incorrect Options:** Incorrect options might appeal to students who misinterpret the angle sum property or make calculation errors.  For example, option A and B might be chosen if a student mistakenly assumes an isosceles triangle (two angles equal). Option D might result from a simple addition or subtraction error.\n\n3. **Actionable Insight/Micro-Recommendation:** Although the student answered correctly, the high unclarity (48.17) despite a short response time suggests a potential lack of fluency or confidence in applying the angle sum property.  **Practice (P)** more geometry problems involving angle calculations in triangles to build speed and accuracy.  Focus on **Accuracy (A)** by meticulously checking calculations after each step."
+                },
+                {
+                    "question_id": 11,
+                    "question_text": "Having been built to withstand earthquakes, the structure remained intact.",
+                    "options": [
+                        "A. Being built to withstand",
+                        "B. Having built to withstand",
+                        "C. Built to withstand",
+                        "D. Having been built to withstand"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "SC",
+                    "subtopic": "Modifiers",
+                    "difficulty": "Hard",
+                    "learner_response": "C. Built to withstand",
+                    "time_spent": 2.9,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 0.36000001430511475,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C, \"Built to withstand,\" is correct because it uses a participial phrase correctly modifying the subject \"structure.\"  The sentence uses a passive voice construction, indicating the structure's inherent quality of being built to withstand earthquakes. This tests understanding of participial phrases and passive voice in sentence construction.\n\n\n2. **Incorrect Option Traps:** Option A (\"Being built to withstand\") uses the present participle \"being built,\" implying an ongoing process, whereas the sentence describes a completed action. Option B (\"Having built to withstand\") is grammatically incorrect; it uses a past participle (\"built\") incorrectly after the present perfect participle \"having built\". Option D (\"Having been built to withstand\") is grammatically correct, but less concise and elegant than option C.  The extra \"having been\" adds unnecessary words. While grammatically correct, it's less preferred due to style.\n\n\n3. **Actionable Insight/Recommendation:** Although the learner answered correctly and quickly, the low behavioral confidence and moderate unclarity suggest a potential lack of strong grammatical intuition.  To improve **Practice**, focus on more complex sentences using participial phrases and passive voice.  For **Analysis**, carefully analyze why other options are incorrect, explicitly noting the grammatical flaws.  For **Control**, set a minimum time limit for each sentence correction question to encourage thorough consideration and reduce reliance on quick guesses."
+                },
+                {
+                    "question_id": 12,
+                    "question_text": "If x + y = 10 and x - y = 4, what is the value of x?",
+                    "options": [
+                        "A. 7",
+                        "B. 5",
+                        "C. 6",
+                        "D. 3"
+                    ],
+                    "correct_answer": "A",
+                    "topic": "Algebra",
+                    "subtopic": "Equations",
+                    "difficulty": "Easy",
+                    "learner_response": "B. 5",
+                    "time_spent": 2.5,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 4.800000190734863,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The question tests the concept of solving simultaneous linear equations.  Adding the two equations (x + y = 10) and (x - y = 4) eliminates 'y', resulting in 2x = 14. Solving for x gives x = 7 (Option A).\n\n2. **Why Incorrect Options are Appealing:** Option B (5) might be appealing because it's a seemingly simple average of 10 and 4.  However, this approach is incorrect; it doesn't account for the relationship between x and y in the given equations.  Incorrect options often present easily calculated but irrelevant numbers.\n\n3. **Actionable Insight & Micro-Recommendation:** The learner's extremely low effort and confidence alongside a high unclarity score on an incorrect answer strongly suggests a rushed approach or lack of understanding of the simultaneous equation solving process.  To improve, **Practice (P)** more simultaneous equation problems, focusing on systematically eliminating variables using addition/subtraction.  **Analyze (A)** each step carefully and **Check (C)** your work to ensure accuracy before selecting an answer.  **Execute (E)** more practice problems under timed conditions to simulate the test environment and improve speed and accuracy."
+                },
+                {
+                    "question_id": 13,
+                    "question_text": "In a right triangle, the legs are 3 and 4. What is the length of the hypotenuse?",
+                    "options": [
+                        "A. 7",
+                        "B. 5",
+                        "C. 8",
+                        "D. 6"
+                    ],
+                    "correct_answer": "B",
+                    "topic": "Geometry",
+                    "subtopic": "Pythagorean Theorem",
+                    "difficulty": "Easy",
+                    "learner_response": "D. 6",
+                    "time_spent": 6.2,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 7.389999866485596,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option B, 5, is correct because the question tests the Pythagorean theorem.  In a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides (legs).  Therefore, hypotenuse\u00b2 = 3\u00b2 + 4\u00b2 = 9 + 16 = 25, and the hypotenuse = \u221a25 = 5.\n\n2. **Incorrect Option Explanation:** Option D (6) might be appealing because it's a simple sum of the two legs (3+4=7).  However, this ignores the fundamental Pythagorean theorem which requires squaring the legs before adding them. Other incorrect options are simply incorrect sums or values unrelated to the theorem.\n\n3. **Actionable Insight & Micro-Recommendation:** The learner's low effort, low confidence, high unclarity, and incorrect answer on a question that should take only basic geometry knowledge point to a lack of fundamental understanding of the Pythagorean theorem.  **Practice:** Focus on practicing more Pythagorean theorem problems, varying the leg lengths and focusing on understanding the underlying concept, not just memorizing a formula.  **Accuracy:**  Carefully review the steps and calculations involved in applying the theorem to eliminate calculation errors."
+                },
+                {
+                    "question_id": 14,
+                    "question_text": "The scientist\u2019s discovery, which was groundbreaking, earned international acclaim.",
+                    "options": [
+                        "A. that was groundbreaking",
+                        "B. which was groundbreaking",
+                        "C. being groundbreaking",
+                        "D. groundbreaking"
+                    ],
+                    "correct_answer": "B",
+                    "topic": "SC",
+                    "subtopic": "Relative Clauses",
+                    "difficulty": "Medium",
+                    "learner_response": "C. being groundbreaking",
+                    "time_spent": 1.9,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 4.659999847412109,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option B is correct because it uses a participial phrase (\"which was groundbreaking\") to correctly modify the noun \"discovery.\"  This demonstrates understanding of correct participial phrase usage and subject-verb agreement within a complex sentence. The concept tested is sentence structure and modification.\n\n2. **Why Incorrect Options are Appealing/Flawed:** Option C (\"being groundbreaking\") creates a dangling modifier;  \"being groundbreaking\" doesn't clearly modify \"discovery.\" Option A (\"that was groundbreaking\") is grammatically correct but slightly less elegant than the participial phrase in B.  Option D (\"groundbreaking\") is a concise, grammatically correct adjective, but it lacks the clarity and nuance provided by the added information of the participial phrase in B, which describes the nature of the groundbreaking discovery.\n\n3. **Actionable Insight/Micro-recommendation:**  Given the incorrect answer, extremely low effort, near-zero confidence, and moderate unclarity, despite a short response time, the learner likely rushed and lacked sufficient practice with participial phrases.  **Practice:** Focus on identifying and correctly constructing participial phrases in complex sentences using practice questions.  **Action:**  Review grammar rules on participial phrases and their proper usage. **Confidence:** Aim for higher confidence before submitting answers; take additional time to analyze the sentence structure and eliminate incorrect options."
+                },
+                {
+                    "question_id": 15,
+                    "question_text": "The author\u2019s tone in the passage can best be described as:",
+                    "options": [
+                        "A. Sarcastic",
+                        "B. Neutral",
+                        "C. Critical",
+                        "D. Optimistic"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "RC",
+                    "subtopic": "Tone",
+                    "difficulty": "Hard",
+                    "learner_response": "D. Optimistic",
+                    "time_spent": 2.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 5.519999980926514,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C, \"Critical,\" is correct because the passage likely contains negative evaluations or judgments of a subject, idea, or person.  This is a Reading Comprehension (RC) question testing inference and tone identification.  The author's attitude is revealed indirectly through word choice, sentence structure, and the overall presentation of information.  To answer correctly, one needs to identify the author's implicit criticisms or negative assessment.\n\n2. **Why Incorrect Options are Appealing:** Option D, \"Optimistic,\" is a common trap because some passages might contain positive elements alongside the criticism. However, the overall tone might still be predominantly critical.  A superficial reading might focus on the positive aspects and overlook the prevalent negativity. Option A, \"Sarcastic,\" might be tempting if the passage uses irony, but sarcasm is a specific type of criticism, and if the passage's criticism isn't ironic, \"Critical\" is a more accurate and encompassing description.  Option B, \"Neutral,\" is incorrect if there is a clear negative or positive bias in the author's presentation.\n\n3. **Actionable Insight/Micro-Recommendation:** The extremely low effort (0.00) and confidence (0.00) scores, coupled with a quick response time (2.7 seconds) and an incorrect answer suggest a rushed and superficial reading.  To improve, **Practice (P)** actively engaging with the text to identify the author's tone through detailed note-taking and annotation.  **Analyze (A)** the word choice and sentence structure to discern subtle hints of the author's attitude and ensure that your comprehension extends beyond the surface level of the text.   **Create (C)** practice questions focusing on identifying authorial tone in various passages to build expertise."
+                },
+                {
+                    "question_id": 16,
+                    "question_text": "The plan to increase taxes will improve infrastructure, provided that:",
+                    "options": [
+                        "A. Public support remains strong.",
+                        "B. Inflation does not rise.",
+                        "C. Funds are allocated efficiently.",
+                        "D. Businesses do not relocate."
+                    ],
+                    "correct_answer": "C",
+                    "topic": "CR",
+                    "subtopic": "Strengthen",
+                    "difficulty": "Medium",
+                    "learner_response": "C. Funds are allocated efficiently.",
+                    "time_spent": 1.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 4.349999904632568,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** The question tests the understanding of **necessary conditions**. The sentence establishes a conditional relationship:  Tax increase \u2192 improved infrastructure. Option C (\"Funds are allocated efficiently\") identifies a necessary condition for the plan to achieve its stated goal.  Without efficient allocation, the improved infrastructure is unlikely, breaking the conditional link.\n\n2. **Why Other Options are Incorrect:**\n    * **A (Public support):** While helpful, public support isn't strictly *necessary* for infrastructure improvement. The plan could proceed even with low public approval.\n    * **B (Inflation):** Inflation is a separate economic factor; its presence or absence doesn't directly determine whether the funds improve infrastructure.\n    * **D (Businesses relocating):** Businesses relocating is irrelevant to whether the tax increase *itself* improves infrastructure.  It might impact the overall economic effect, but not the direct impact of the tax increase on infrastructure.\n\n3. **Actionable Insight/Micro-Recommendation (P.A.C.E.):**  The learner answered correctly but exhibited high unclarity and zero behavioral confidence despite a very short response time. This suggests a possible lucky guess or superficial understanding of necessary conditions.  **Practice:** Focus on more complex conditional reasoning questions, specifically those requiring the identification of necessary versus sufficient conditions.  **Analyze:**  After each question, actively review why incorrect options are flawed, solidifying understanding beyond just selecting the correct answer."
+                },
+                {
+                    "question_id": 17,
+                    "question_text": "A company\u2019s new product launch was successful because it addressed a gap in the market. What assumption underlies this statement?",
+                    "options": [
+                        "A. The company had sufficient marketing budget.",
+                        "B. Competitors ignored the market gap.",
+                        "C. The market gap was previously identified.",
+                        "D. The product was priced competitively."
+                    ],
+                    "correct_answer": "C",
+                    "topic": "CR",
+                    "subtopic": "Assumption",
+                    "difficulty": "Hard",
+                    "learner_response": "A. The company had sufficient marketing budget.",
+                    "time_spent": 2.2,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 8.619999885559082,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option C is correct because the statement \"A company\u2019s new product launch was successful because it addressed a gap in the market\" implicitly assumes that the gap existed *before* the product launch.  The success is directly attributed to filling this pre-existing gap. This tests the crucial Critical Reasoning skill of identifying underlying assumptions\u2014unstated premises necessary for the conclusion to be valid.\n\n2. **Why Incorrect Options are Appealing (and Flawed):**\n    * **A (Sufficient Marketing Budget):** While marketing is important for success, the statement's logic focuses solely on the product filling a market need.  A large budget doesn't guarantee success if the product doesn't address a real demand.\n    * **B (Competitors Ignored the Market Gap):**  The statement's success is linked to filling the gap, not whether competitors were aware of it or acted on it.  The gap's existence is the key.\n    * **D (Product Priced Competitively):** Price is a factor in success, but the statement's core reasoning rests on addressing the market gap, regardless of pricing strategy.\n\n\n3. **Actionable Insight/Micro-Recommendation (P.A.C.E.):**  The learner's extremely low effort and high unclarity despite an incorrect answer suggest a lack of focused engagement with the underlying logic.  **Practice:** Focus on actively identifying the stated conclusion and then systematically exploring what unstated assumptions are necessary to support it.  **Analyze:** After each attempt, meticulously analyze why the incorrect options are flawed and how they differ from the correct one.  **Create:** Develop a checklist or mental framework to guide the identification of assumptions in CR questions."
+                },
+                {
+                    "question_id": 18,
+                    "question_text": "The passage implies that technological advancements have:",
+                    "options": [
+                        "A. Reduced job opportunities",
+                        "B. Widened economic inequality",
+                        "C. All of the above",
+                        "D. Increased productivity"
+                    ],
+                    "correct_answer": "C",
+                    "topic": "RC",
+                    "subtopic": "Inference",
+                    "difficulty": "Hard",
+                    "learner_response": "C. All of the above",
+                    "time_spent": 2.5,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 3.0399999618530273,
+                        "confidence": 0.0
+                    },
+                    "correct": true,
+                    "perceived_confidence_score": 77.0,
+                    "ai_question_insight": "1. **Core Reason for Correct Answer:** Option C is correct because the question tests inference in Reading Comprehension.  A strong passage would likely present evidence suggesting technological advancements boost productivity (D), but this increased productivity might not be evenly distributed, leading to reduced job opportunities (A) for some and widening economic inequality (B) between groups.  The passage implies all three as potential consequences.\n\n2. **Common Traps and Why Incorrect Options Might Be Appealing:** Options A and B might seem appealing individually if the learner only focused on specific parts of the passage.  However, a comprehensive understanding of the passage's implications necessitates recognizing the interconnectedness of technological advancement's impacts, encompassing both positive (increased productivity) and negative (job displacement and inequality) consequences.\n\n3. **Actionable Insight/Micro-recommendation:**  Despite getting the correct answer, the extremely low effort and moderate unclarity scores (while speed is not bad), suggest a lack of thorough engagement with the passage.  To improve *Reading Comprehension Inference* skills, the learner should **Practice** actively summarizing and identifying cause-and-effect relationships within passages, **Analyze** the reasoning behind both correct and incorrect answer options more deliberately, even when quickly grasping the answer, and **Conceptualize** the broad implications of presented information, going beyond the literal text."
+                },
+                {
+                    "question_id": 19,
+                    "question_text": "The passage suggests that the primary reason for the decline in biodiversity is:",
+                    "options": [
+                        "A. Habitat destruction",
+                        "B. Invasive species",
+                        "C. Overhunting",
+                        "D. Climate change"
+                    ],
+                    "correct_answer": "A",
+                    "topic": "RC",
+                    "subtopic": "Main Idea",
+                    "difficulty": "Medium",
+                    "learner_response": "B. Invasive species",
+                    "time_spent": 1.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 5.630000114440918,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option A, habitat destruction, is correct because the passage likely presents evidence showing habitat loss as the most significant factor contributing to the decline in biodiversity.  This tests the learner's ability to identify the main idea and draw an inference based on the passage's content, a core Reading Comprehension skill.  The passage probably provides more supporting details or examples related to habitat destruction than to other threats.\n\n2. **Why Incorrect Options are Appealing:**  B (Invasive species), C (Overhunting), and D (Climate change) are all valid contributors to biodiversity loss.  The passage might mention these factors, making them seem plausible. However, the core question asks for the *primary* reason, implying a hierarchical relationship between the factors.  The learner likely misinterpreted the emphasis or failed to identify the most heavily weighted factor in the passage.\n\n3. **Actionable Insight & Micro-Recommendation (P.A.C.E.):** The extremely low effort and low confidence coupled with the incorrect answer and short response time strongly suggest the learner rushed through the passage without careful analysis.  To improve **Practice**, focus on actively identifying the main points and supporting evidence in each passage, specifically noting the frequency and emphasis given to different reasons for biodiversity decline.  Increase **Accuracy** by actively eliminating incorrect choices and clearly identifying the supporting details for the selected answer.  Allocate more **Time** to ensure thoughtful analysis of passage content."
+                },
+                {
+                    "question_id": 20,
+                    "question_text": "The committee has decided to postpone the meeting until next week, which will allow more time for preparation.",
+                    "options": [
+                        "A. has decided postponing",
+                        "B. have decided to postpone",
+                        "C. have decided postponing",
+                        "D. has decided to postpone"
+                    ],
+                    "correct_answer": "D",
+                    "topic": "SC",
+                    "subtopic": "Subject-Verb Agreement",
+                    "difficulty": "Medium",
+                    "learner_response": "C. have decided postponing",
+                    "time_spent": 3.7,
+                    "behavioral_metrics": {
+                        "frustration": 0.0,
+                        "confusion": 3.9600000381469727,
+                        "confidence": 0.0
+                    },
+                    "correct": false,
+                    "perceived_confidence_score": 38.0,
+                    "ai_question_insight": "1. **Correct Answer Explanation:** Option D, \"has decided to postpone,\" is correct because it uses the correct subject-verb agreement (\"committee\" is singular, thus \"has\") and the correct verb form.  \"To postpone\" is the correct infinitive form to follow \"decided.\" This question tests subject-verb agreement and the correct usage of infinitives.\n\n2. **Trap Explanation:** Option C (\"have decided postponing\") is incorrect because it uses the plural verb \"have\" with the singular subject \"committee\" and incorrectly uses \"postponing\" as a gerund instead of the infinitive \"to postpone.\"  Option B (\"have decided to postpone\") makes the same subject-verb agreement error. Option A (\"has decided postponing\") incorrectly uses the gerund \"postponing\" where an infinitive is required. The incorrect options might seem appealing due to the common mistake of confusing subject-verb agreement or improperly using gerunds and infinitives.\n\n3. **Actionable Insight:**  Given the incorrect answer, very low effort, and moderate unclarity, the learner needs to **Practice** more subject-verb agreement exercises focusing on singular and collective nouns. They should also **Analyze** the difference between infinitives and gerunds with specific examples and **Create** flashcards to memorize the correct usage.  Finally, they should **Execute** practice questions with a focus on deliberate and mindful selection of answers to improve accuracy."
+                }
+            ]
+        }
+    ]
+}
