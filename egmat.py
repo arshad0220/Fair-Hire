@@ -686,212 +686,170 @@ def generate_pdf_report(session_data, performance_analysis, learner_name, sessio
     base_color = colors.black
 
     styles['Normal'].wordWrap = 'CJK'
-    styles['Normal'].fontSize = 12
+    styles['Normal'].fontSize = 10
     styles['Normal'].alignment = TA_LEFT
     styles['Normal'].fontName = base_font
+    styles['Normal'].textColor = base_color
+    styles['Normal'].leading = 12
 
-    styles.add(ParagraphStyle(name='Heading4_NoSpace', parent=styles['Heading4'], spaceAfter=0))
-    styles.add(ParagraphStyle(name='Heading5_NoSpace', parent=styles['Heading5'], spaceAfter=0))
-    styles.add(ParagraphStyle(name='Normal_Indent', parent=styles['Normal'], leftIndent=10))
-    styles.add(ParagraphStyle(name='Normal_DoubleIndent', parent=styles['Normal'], leftIndent=20))
+    styles.add(ParagraphStyle(name='Heading1_Left', parent=styles['h1'], alignment=TA_LEFT, fontName=base_font + "-Bold", fontSize=16, spaceAfter=18, textColor=base_color))
+    styles.add(ParagraphStyle(name='Heading2_Left', parent=styles['h2'], alignment=TA_LEFT, fontName=base_font + "-Bold", fontSize=14, spaceBefore=12, spaceAfter=10, textColor=base_color))
+    styles.add(ParagraphStyle(name='Heading3_Left', parent=styles['h3'], alignment=TA_LEFT, fontName=base_font + "-Bold", fontSize=12, spaceBefore=8, spaceAfter=6, textColor=base_color))
+    styles.add(ParagraphStyle(name='Heading4_Left', parent=styles['h4'], alignment=TA_LEFT, fontName=base_font + "-Bold", fontSize=10, spaceBefore=6, spaceAfter=4, textColor=base_color))
+    styles.add(ParagraphStyle(name='Normal_Left', parent=styles['Normal'], alignment=TA_LEFT))
+    styles.add(ParagraphStyle(name='Normal_Indent_Left', parent=styles['Normal_Left'], leftIndent=20, spaceAfter=4))
+    styles.add(ParagraphStyle(name='Normal_DoubleIndent_Left', parent=styles['Normal_Left'], leftIndent=40, spaceAfter=4))
 
-    def draw_title(text, y):
-        c.setFont(base_font + "-Bold", 14)
-        c.setFillColor(base_color)
-        c.drawString(50, y, text)
-        return y - 18
-    def draw_paragraph(text, y, style='Normal', indent=0):
-        p_style = styles[style]
-        
-        
-        if indent > 0 and style == 'Normal_Indent':
-             p_style = styles['Normal_Indent']
-        elif indent > 0 and style == 'Normal_DoubleIndent':
-             p_style = styles['Normal_DoubleIndent']
-        elif indent > 0 :
-             custom_style_name = f'Normal_Indent_{indent}_{style}'
-             if custom_style_name not in styles:
-                styles.add(ParagraphStyle(name=custom_style_name, parent=styles[style], leftIndent=indent))
-             p_style = styles[custom_style_name]
+    story = []
+    available_width = letter[0] - 100
 
-        paragraph = Paragraph(text, p_style)
-        available_width = letter[0] - 100
-        
-        current_left_indent = p_style.leftIndent if hasattr(p_style, 'leftIndent') else 0
-        w, h = paragraph.wrap(available_width - current_left_indent, letter[1]) 
-        
-        draw_x = 50 + current_left_indent if (style.startswith('Normal_Indent') or style.startswith('Normal_DoubleIndent')) else (50 + indent)
-        paragraph.drawOn(c, draw_x , y - h)
-        return y - h - 10
-    y = 750
-    c.setFont(base_font + "-Bold", 18)
-    c.drawString(50, y, f"e-GMAT Personalized Performance Report")
-    y -= 24
-    c.setFont(base_font, 12)
-    y = draw_paragraph(f"Learner: {learner_name}", y, style='Normal', indent=0)
-    y = draw_paragraph(f"Session ID: {session_data.get('session_id', 'N/A')}, Date: {session_data.get('date', 'N/A')}", y, style='Normal', indent=0)
-    y = draw_paragraph(f"Session Score: {session_data.get('score', 0)}/{session_data.get('total', 1)} ({session_data.get('score', 0)/session_data.get('total',1)*100 if session_data.get('total',1)>0 else 0:.1f}%)", y, style='Normal', indent=0)
-    y -= 12
-    y = draw_title("Session Engagement Metrics", y)
+    story.append(Paragraph(f"e-GMAT Personalized Performance Report", styles['Heading1_Left']))
+    story.append(Paragraph(f"Learner: {learner_name}", styles['Normal_Left']))
+    story.append(Paragraph(f"Session ID: {session_data.get('session_id', 'N/A')}, Date: {session_data.get('date', 'N/A')}", styles['Normal_Left']))
+    story.append(Paragraph(f"Session Score: {session_data.get('score', 0)}/{session_data.get('total', 1)} ({session_data.get('score', 0)/session_data.get('total',1)*100 if session_data.get('total',1)>0 else 0:.1f}%)", styles['Normal_Left']))
+
+    story.append(Paragraph("Session Engagement Metrics", styles['Heading2_Left']))
     engagement_score_label = "N/A"
     with state.state_lock:
         engagement_score_label = f"{state.engagement_score}/10 (Overall P.A.C.E. Engagement Score)"
-    y = draw_paragraph(f"Observed Behavioral State During Session: {engagement_score_label}", y, style='Normal', indent=0)
-    y -= 18
-    y = draw_title("Performance Breakdown by Topic", y)
+    story.append(Paragraph(f"Observed Behavioral State During Session: {engagement_score_label}", styles['Normal_Left']))
+
+    story.append(Paragraph("Performance Breakdown by Topic", styles['Heading2_Left']))
     topics_data = performance_analysis.get('summary', {}).get('topics', {})
-    data = [['Topic', 'Correct/Total', 'Accuracy (%)', 'Avg Pacing (s)', 'Perceived Confidence', 'Avg Effort', 'Avg Focus', 'Avg Behav. Conf']]
-    for topic, stats in topics_data.items():
-        is_quant = any(q.get('topic') == topic and q.get('topic') in ['Algebra', 'Geometry', 'Quant', 'Data Insights'] for q in session_data.get('questions',[]))
-        recommended_time = RECOMMENDED_TIME_QUANT if is_quant else RECOMMENDED_TIME_VERBAL
-        time_str = f"{stats.get('avg_time', 0):.1f} (Rec: {recommended_time:.1f})"
-        data.append([
-            topic,
-            f"{stats.get('correct', 0)}/{stats.get('total', 0)}",
-            f"{stats.get('accuracy', 0)*100:.1f}",
-            time_str,
-            f"{stats.get('perceived_confidence_score', 0):.1f}",
-            f"{stats.get('avg_behavioral',{}).get('frustration',0):.1f}",
-            f"{stats.get('avg_behavioral',{}).get('confusion',0):.1f}",
-            f"{stats.get('avg_behavioral',{}).get('confidence',0):.1f}"
+    if topics_data:
+        data = [['Topic', 'Correct / Total', 'Accuracy (%)', 'Avg Pacing (s)', 'Perceived Confidence', 'Avg Effort', 'Avg Focus', 'Avg Behav. Conf']]
+        for topic, stats in topics_data.items():
+            is_quant = any(q.get('topic') == topic and q.get('topic') in ['Algebra', 'Geometry', 'Quant', 'Data Insights'] for q in session_data.get('questions',[]))
+            recommended_time = RECOMMENDED_TIME_QUANT if is_quant else RECOMMENDED_TIME_VERBAL
+            time_str = f"{stats.get('avg_time', 0):.1f} (Rec: {recommended_time:.1f})"
+            data.append([
+                Paragraph(topic, styles['Normal_Left']),
+                Paragraph(f"{stats.get('correct', 0)}/{stats.get('total', 0)}", styles['Normal_Left']),
+                Paragraph(f"{stats.get('accuracy', 0)*100:.1f}", styles['Normal_Left']),
+                Paragraph(time_str, styles['Normal_Left']),
+                Paragraph(f"{stats.get('perceived_confidence_score', 0):.1f}", styles['Normal_Left']),
+                Paragraph(f"{stats.get('avg_behavioral',{}).get('frustration',0):.1f}", styles['Normal_Left']),
+                Paragraph(f"{stats.get('avg_behavioral',{}).get('confusion',0):.1f}", styles['Normal_Left']),
+                Paragraph(f"{stats.get('avg_behavioral',{}).get('confidence',0):.1f}", styles['Normal_Left'])
+            ])
+        col_widths = [available_width * x for x in [0.15, 0.15, 0.13, 0.17, 0.12, 0.1, 0.1, 0.08]]
+        table = Table(data, colWidths=col_widths)
+        table_style = TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#003366')), ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'), ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+            ('FONTNAME', (0, 0), (-1, 0), base_font + "-Bold"), ('FONTSIZE', (0, 0), (-1, 0), 9),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 10), ('TOPPADDING', (0, 0), (-1, 0), 4),
+            ('BACKGROUND', (0, 1), (-1, -1), colors.white),
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+            ('BOX', (0, 0), (-1, -1), 1, colors.black),
+            ('FONTNAME', (0, 1), (-1, -1), base_font), ('FONTSIZE', (0, 1), (-1, -1), 8),
+            ('LEFTPADDING', (0,0), (-1,-1), 4), ('RIGHTPADDING', (0,0), (-1,-1), 4),
+            ('TOPPADDING', (0,1), (-1,-1), 3), ('BOTTOMPADDING', (0,1), (-1,-1), 3),
         ])
-    table = Table(data)
-    table_style = TableStyle([
-        ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#003366')), ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
-        ('ALIGN', (0, 0), (-1, -1), 'CENTER'), ('FONTNAME', (0, 0), (-1, 0), base_font + "-Bold"),
-        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
-        ('BACKGROUND', (0, 1), (-1, -1), colors.white),
-        ('GRID', (0, 0), (-1, -1), 1, colors.gray),
-        ('BOX', (0, 0), (-1, -1), 1, colors.black),
-        ('FONTSIZE', (0, 0), (-1, -1), 8),
-        ('VALIGN', (0, 0), (-1, -1), 'MIDDLE')
-    ])
-    table.setStyle(table_style)
-    table_width = letter[0] - 100
-    table.wrapOn(c, table_width, letter[1])
-    w, h = table.wrap(table_width, letter[1])
-    table.drawOn(c, 50, y - h)
-    y -= h + 12
-    c.showPage()
-    y = 750
-    y = draw_title("Performance Breakdown by Subtopic", y)
+        table.setStyle(table_style)
+        story.append(table)
+    else:
+        story.append(Paragraph("No topic performance data available.", styles['Normal_Left']))
+
+    story.append(Paragraph("Performance Breakdown by Subtopic", styles['Heading2_Left']))
     subtopics_data = performance_analysis.get('summary', {}).get('subtopics', {})
-    data = [['Subtopic', 'Correct/Total', 'Accuracy (%)', 'Avg Pacing (s)', 'Perceived Confidence']]
-    for subtopic, stats in subtopics_data.items():
-        data.append([
-            subtopic,
-            f"{stats.get('correct', 0)}/{stats.get('total', 0)}",
-            f"{stats.get('accuracy', 0)*100:.1f}",
-            f"{stats.get('avg_time', 0):.1f}",
-            f"{stats.get('perceived_confidence_score', 0):.1f}"
+    if subtopics_data:
+        data = [['Subtopic', 'Correct / Total', 'Accuracy (%)', 'Avg Pacing (s)', 'Perceived Confidence']]
+        for subtopic, stats in subtopics_data.items():
+            data.append([
+                Paragraph(subtopic, styles['Normal_Left']),
+                Paragraph(f"{stats.get('correct', 0)}/{stats.get('total', 0)}", styles['Normal_Left']),
+                Paragraph(f"{stats.get('accuracy', 0)*100:.1f}", styles['Normal_Left']),
+                Paragraph(f"{stats.get('avg_time', 0):.1f}", styles['Normal_Left']),
+                Paragraph(f"{stats.get('perceived_confidence_score', 0):.1f}", styles['Normal_Left'])
+            ])
+        col_widths_sub = [available_width * x for x in [0.35, 0.18, 0.17, 0.15, 0.15]]
+        sub_table = Table(data, colWidths=col_widths_sub)
+        sub_table_style = TableStyle([
+            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#003366')), ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+            ('ALIGN', (0, 0), (-1, -1), 'LEFT'), ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+            ('FONTNAME', (0, 0), (-1, 0), base_font + "-Bold"), ('FONTSIZE', (0, 0), (-1, 0), 9),
+            ('BOTTOMPADDING', (0, 0), (-1, 0), 10), ('TOPPADDING', (0, 0), (-1, 0), 4),
+            ('BACKGROUND', (0, 1), (-1, -1), colors.white),
+            ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+            ('BOX', (0, 0), (-1, -1), 1, colors.black),
+            ('FONTNAME', (0, 1), (-1, -1), base_font), ('FONTSIZE', (0, 1), (-1, -1), 8),
+            ('LEFTPADDING', (0,0), (-1,-1), 4), ('RIGHTPADDING', (0,0), (-1,-1), 4),
+            ('TOPPADDING', (0,1), (-1,-1), 3), ('BOTTOMPADDING', (0,1), (-1,-1), 3),
         ])
-    table = Table(data)
-    table.setStyle(table_style)
-    table.wrapOn(c, table_width, letter[1])
-    w, h = table.wrap(table_width, letter[1])
-    if y - h < 50:
-        c.showPage()
-        y = 750
-        y = draw_title("Performance Breakdown by Subtopic (cont.)", y)
-        table.wrapOn(c, table_width, letter[1])
-        w, h = table.wrap(table_width, letter[1])
-    table.drawOn(c, 50, y - h)
-    y -= h + 12
-    c.showPage()
-    y = 750
-    y = draw_title("Session Visualizations", y)
-    img_height = 180
+        sub_table.setStyle(sub_table_style)
+        story.append(sub_table)
+    else:
+        story.append(Paragraph("No subtopic performance data available.", styles['Normal_Left']))
+
+    story.append(Paragraph("Session Visualizations", styles['Heading2_Left']))
+    img_height = 160
+    img_width_max = available_width * 0.8
     for chart_name in ['accuracy_chart', 'time_chart', 'perceived_confidence_chart', 'behavioral_trends_chart']:
         if chart_name in session_visualizations:
             try:
                 img_data = session_visualizations[chart_name]
                 img = ImageReader(io.BytesIO(img_data))
                 img_width_orig, img_height_orig = img.getSize()
-                img_height_display = img_height
-                img_width_display = (img_height_display / img_height_orig) * img_width_orig
-                if img_width_display > letter[0] - 100:
-                     img_width_display = letter[0] - 100
-                     img_height_display = (img_width_display / img_width_orig) * img_height_orig
-                img_x = 50 + (letter[0] - 100 - img_width_display) / 2
-                if y - img_height_display < 50:
-                    c.showPage()
-                    y = 750
-                    y = draw_title(f"Session Visualizations (cont.) - {chart_name.replace('_', ' ').title()}", y)
-                c.drawImage(img, img_x, y - img_height_display, width=img_width_display, height=img_height_display)
-                y -= img_height_display + 12
+                aspect_ratio = img_height_orig / img_width_orig if img_width_orig > 0 else 1
+                img_width_display = min(img_width_max, img_width_orig)
+                img_height_display = img_width_display * aspect_ratio
+
+                if img_height_display > img_height * 1.5 : # prevent overly tall images
+                    img_height_display = img_height * 1.5
+                    img_width_display = img_height_display / aspect_ratio
+
+                img_flowable = Image(io.BytesIO(img_data), width=img_width_display, height=img_height_display)
+                img_flowable.hAlign = 'LEFT'
+                story.append(img_flowable)
             except Exception as e:
                 print(f"e-GMAT PDF: Error embedding {chart_name} visualization: {e}")
-                y = draw_paragraph(f"[Error embedding {chart_name}: {e}]", y, style='Italic')
-    c.showPage()
-    y = 750
-    y = draw_title("Session Breakdown Analysis (Subtopic Focus)", y)
+                story.append(Paragraph(f"[Error embedding {chart_name}: {e}]", styles['Normal_Left']))
+
+    story.append(Paragraph("Session Breakdown Analysis (Subtopic Focus)", styles['Heading2_Left']))
     breakdown = perform_session_breakdown_analysis(performance_analysis.get('summary', {}))
     for category in ['Demonstrated Strengths', 'Areas for Refinement', 'Efficiency Opportunities', 'Potential Challenges']:
-        y -= 8
-        y = draw_paragraph(f"{category}:", y, style='Heading4_NoSpace', indent=0)
+        story.append(Paragraph(f"{category}:", styles['Heading3_Left']))
         items = breakdown.get(category, ["No items identified."])
         if items:
             for item in items:
-                p = Paragraph(f"- {item}", styles['Normal_Indent'])
-                
-                w, h = p.wrap(letter[0] - 100 - styles['Normal_Indent'].leftIndent, letter[1])
-                if y - h < 50:
-                     c.showPage()
-                     y = 750
-                     y = draw_title(f"Session Breakdown Analysis (cont.) - {category}", y)
-                p.drawOn(c, 50 + styles['Normal_Indent'].leftIndent, y - h)
-                y -= h + 4
+                story.append(Paragraph(f"- {item}", styles['Normal_Indent_Left']))
         else:
-             pass
+             story.append(Paragraph("None identified in this session.", styles['Normal_Indent_Left']))
+
     if ai_comprehensive_analysis_text:
-        c.showPage()
-        y = 750
-        y = draw_title("e-GMAT AI Comprehensive Analysis", y)
-        y -= 6
-        
-        current_y = y
-        lines = ai_comprehensive_analysis_text.split('\n')
-        
-        for line in lines:
-            
-            line_para_style = styles['Normal']
-            line_para = Paragraph(line, line_para_style)
-            
-            current_line_indent = 0 
-            w, h = line_para.wrap(letter[0] - 100 - current_line_indent, letter[1])
-            if current_y - h < 50 and line.strip():
-                c.showPage()
-                current_y = 750
-            if line.strip():
-                 line_para.drawOn(c, 50 + current_line_indent, current_y - h)
-                 current_y -= h + 3
-        y = current_y
-    c.showPage()
-    y = 750
-    y = draw_title("Question-by-Question Insights", y)
-    y -= 6
+        story.append(Paragraph("e-GMAT AI Comprehensive Analysis", styles['Heading2_Left']))
+        ai_lines = ai_comprehensive_analysis_text.split('\n')
+        for line in ai_lines:
+            if line.strip().endswith(':'):
+                 story.append(Paragraph(line.strip(), styles['Heading3_Left']))
+            elif line.strip().startswith('-'):
+                 story.append(Paragraph(line.strip(), styles['Normal_Indent_Left']))
+            elif line.strip():
+                 story.append(Paragraph(line.strip(), styles['Normal_Left']))
+
+    story.append(Paragraph("Question-by-Question Insights", styles['Heading2_Left']))
     questions_results = session_data.get('questions', [])
     if questions_results:
         for i, q_data in enumerate(questions_results):
             q_index = q_data.get('question_id', i+1)
             q_text = f"Question {q_index}:"
-            y = draw_paragraph(q_text, y, style='Heading4_NoSpace', indent=0)
-            stats_text = f"  Outcome: {'Correct' if q_data.get('correct', False) else 'Incorrect'}. Pacing: {q_data.get('time_spent', 0):.1f}s. Behavioral: Effort={q_data.get('behavioral_metrics', {}).get('frustration',0):.1f}, Focus={q_data.get('behavioral_metrics',{}).get('confusion',0):.1f}, Confidence={q_data.get('behavioral_metrics',{}).get('confidence',0):.1f}. Perceived Confidence Score: {q_data.get('perceived_confidence_score', 0):.1f}/100"
-            y = draw_paragraph(stats_text, y, style='Normal_Indent', indent=0) 
+            story.append(Paragraph(q_text, styles['Heading4_Left']))
+            stats_text = f"Outcome: {'Correct' if q_data.get('correct', False) else 'Incorrect'}. Pacing: {q_data.get('time_spent', 0):.1f}s. Behavioral: Effort={q_data.get('behavioral_metrics', {}).get('frustration',0):.1f}, Focus={q_data.get('behavioral_metrics',{}).get('confusion',0):.1f}, Confidence={q_data.get('behavioral_metrics',{}).get('confidence',0):.1f}. Perceived Confidence Score: {q_data.get('perceived_confidence_score', 0):.1f}/100"
+            story.append(Paragraph(stats_text, styles['Normal_Indent_Left']))
+            story.append(Paragraph("e-GMAT AI Insight:", styles['Heading4_Left']))
             insight_text = q_data.get('ai_question_insight', 'No AI insight available.')
-            y = draw_paragraph("  e-GMAT AI Insight:", y, style='Heading5_NoSpace', indent=10) 
-            insight_para = Paragraph(insight_text, styles['Normal_DoubleIndent'])
-            
-            w, h = insight_para.wrap(letter[0] - 100 - styles['Normal_DoubleIndent'].leftIndent, letter[1])
-            if y - h < 50 and i < len(questions_results) -1:
-                c.showPage()
-                y = 750
-                y = draw_title(f"Question-by-Question Insights (cont.)", y)
-            insight_para.drawOn(c, 50 + styles['Normal_DoubleIndent'].leftIndent, y - h)
-            y -= h + 8
+            story.append(Paragraph(insight_text, styles['Normal_DoubleIndent_Left']))
     else:
-         y = draw_paragraph("No question-wise insight data available.", y, style='Normal', indent=0)
-    c.save()
+         story.append(Paragraph("No question-wise insight data available.", styles['Normal_Left']))
+
+    from reportlab.platypus import SimpleDocTemplate
+
+    doc = SimpleDocTemplate(buffer, pagesize=letter,
+                            leftMargin=50, rightMargin=50,
+                            topMargin=50, bottomMargin=50)
+    doc.build(story)
+
     buffer.seek(0)
     print("e-GMAT PDF: Personalized Performance Report (PDF) generated successfully.")
     return buffer.getvalue()
@@ -1138,7 +1096,8 @@ class TestPage(tk.Frame):
         self.cancel_updates()
         self.webcam_label.config(text="Engagement Feed Unavailable.\nUsing simulated behavioral data.\n\nPlease check camera connection & permissions.", fg="#FF0000")
         if self.after_id_webcam:
-             self.after_cancel(self.after_id_webcam)
+             try: self.after_cancel(self.after_id_webcam)
+             except tk.TclError: pass
              self.after_id_webcam = None
         if not self.update_loop_started:
             self.update_behavioral_metrics()
@@ -1392,7 +1351,7 @@ class ReportPage(tk.Frame):
             self.report_text.insert(tk.END, ai_comprehensive_analysis_text + "\n\n")
         else:
             self.report_text.insert(tk.END, "Comprehensive AI analysis was not generated.\n\n")
-        self.report_text.insert(tk.END, "--- Notes ---")
+        self.report_text.insert(tk.END, "--- Notes ---\n")
         self.report_text.insert(tk.END, "Download the Comprehensive Report (PDF) for detailed subtopic breakdown, visual charts (performance & behavioral), and question-by-question AI insights.\n")
         self.report_text.config(state='disabled')
     def download_json(self):
